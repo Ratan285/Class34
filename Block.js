@@ -1,7 +1,6 @@
 class Block {                                           
   constructor(x, y) {                                           
-    var options = {                                           
-                                           
+    var options = {                                                            
       restitution: 0.4,                                 
       friction: 0.1,                   
       isStatic: false

@@ -11,7 +11,7 @@ class Block {
     this.height = 70;                                           
     this.visibility = 255;                              
     World.add(world, this.body);                             
-  }                                           
+  }
                                            
                                            
   display() {                                           

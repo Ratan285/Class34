@@ -2,27 +2,27 @@ class Block {
   constructor(x, y) {                                           
     var options = {                                           
                                            
-      restitution: 0.4,                                           
-      friction: 0.1,                                           
-      isStatic: false                                           
+      restitution: 0.4,                                 
+      friction: 0.1,                   
+      isStatic: false
                                            
     }                                           
-    this.body = Bodies.rectangle(x, y, 70, 70, options);                                           
+    this.body = Bodies.rectangle(x, y, 70, 70, options);                             
     this.width = 70;                                           
     this.height = 70;                                           
-    this.visibility = 255;                                           
-    World.add(world, this.body);                                           
+    this.visibility = 255;                              
+    World.add(world, this.body);                             
   }                                           
                                            
                                            
   display() {                                           
-    var angle = this.body.angle;                                           
-    var pos = this.body.position;                                           
+    var angle = this.body.angle;                             
+    var pos = this.body.position;                             
                                            
-    if (this.body.speed < 10) {                                           
+    if (this.body.speed < 10) {                             
       push();                                           
-      strokeWeight(7);                                           
-      stroke("green");                                           
+      strokeWeight(7);                                 
+      stroke("green");                                 
       translate(pos.x, pos.y);                                           
       rotate(angle);                                           
       rectMode(CENTER);                                           

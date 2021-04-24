@@ -14,10 +14,10 @@ class Block {
   }
                                            
                                            
-  display() {                                           
-    var angle = this.body.angle;                             
-    var pos = this.body.position;                             
-                                           
+  display() {
+    var angle = this.body.angle;
+    var pos = this.body.position;
+
     if (this.body.speed < 10) {                             
       push();                                           
       strokeWeight(7);                                 
